@@ -27,3 +27,72 @@ a:hover {
     color: white;
     background-color: black;
 }
+.navbar {
+    background-color: black;
+}
+.navbar-nav {
+    background-color: black;
+}
+.navbar-brand {
+    background-color: black;
+}
+.lg {
+    background-color: black;
+    font-size: xx-large;
+}
+h1 {
+    font-size: 33px;
+    color: white;
+}
+h2 {
+    font-size: 1.5em;
+    color: white;
+}
+.author {
+    font-size: 15px;
+}
+.date {
+    font-size: 15px;
+}
+.article-card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    color: black;
+    background-color: white;
+    word-wrap: break-word;
+    background-clip: border-box;
+    border-radius: 25px;
+    margin-top: 20px;
+}
+.cardfooter {
+    padding: 0.76rem 1.27rem;
+    padding-bottom: 0px;
+    border-radius: 0px 0px 15px 15px;
+}
+.article_name {
+    color: white;
+}
+.source-body {
+    margin-bottom: 25pxpx;
+}
+.source {
+    margin-top: 8px;
+    padding-top: 8px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    color: red;
+}
+.logo {
+    color: goldenrod;
+    background-color: black;
+}
+.svg {
+    background-color: black;
+}
+.p-svg {
+    background-color: black;
+}
