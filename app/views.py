@@ -31,3 +31,33 @@ def business():
     sources = businessArticles()
 
     return  render_template('business.html', sources = sources)
+
+@app.route('/category/tech')
+def tech():
+    sources = techArticles()
+
+    return  render_template('tech.html', sources = sources)
+
+@app.route('/category/entertainment')
+def entertainment():
+    sources = entArticles()
+
+    return  render_template('entertainment.html', sources = sources)
+
+@app.route('/category/science')
+def science():
+    sources = scienceArticles()
+
+    return  render_template('science.html', sources = sources)
+
+@app.route('/category/sports')
+def sports():
+    sources = sportArticles()
+
+    return  render_template('sport.html', sources = sources)
+
+@app.route('/category/health')
+def health():
+    sources = healthArticles()
+
+    return  render_template('health.html', sources = sources)
