@@ -96,3 +96,28 @@ h2 {
 .p-svg {
     background-color: black;
 }
+.footer {
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.footer-text {
+    background-color: black;
+    margin-bottom: 0px;
+}
+.dropdown-menu {
+    background-color: black;
+}
+.dropdown-item {
+    color: white;
+}
+.dropdown-item:hover {
+    color: white;
+    background-color: black;
+}
+.published {
+    background-color: goldenrod;
+}
+.card-footer {
+    background-color: goldenrod;
+}
