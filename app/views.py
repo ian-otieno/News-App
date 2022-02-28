@@ -32,11 +32,11 @@ def business():
 
     return  render_template('business.html', sources = sources)
 
-@app.route('/category/tech')
+@app.route('/category/technology')
 def tech():
     sources = techArticles()
 
-    return  render_template('tech.html', sources = sources)
+    return  render_template('technology.html', sources = sources)
 
 @app.route('/category/entertainment')
 def entertainment():
