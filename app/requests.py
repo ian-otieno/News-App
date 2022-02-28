@@ -334,3 +334,33 @@ def healthArticles():
 
     return  contents
 
+def get_news_source():
+  '''
+  Function that gets the json response to our url request
+  '''
+  get_news_source_url = 'https://newsapi.org/v2/sources?apiKey=' + Config.API_KEY
+  with urllib.request.urlopen(get_news_source_url) as url:
+    get_news_source_data = url.read()
+    get_news_source_response = json.loads(get_news_source_data)
+
+    news_source_results = None
+
+    if get_news_source_response['sources']:
+      news_source_results_list = get_news_source_response['sources']
+      news_source_results = process_sources(news_source_results_list)
+
+  return news_source_results
+def process_sources(source_list):
+  '''
+  function that process the news articles and transform them to a list of objects
+  '''
+  news_source_result = []
+  for news_source_item in source_list:
+    name = news_source_item.get('name')
+    description = news_source_item.get('description')
+    url = news_source_item.get('url')
+
+    if name:
+      news_source_object = Sources(name, description,url)
+      news_source_result.append(news_source_object)
+  return news_source_result
