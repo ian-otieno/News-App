@@ -54,7 +54,7 @@ def science():
 def sports():
     sources = sportArticles()
 
-    return  render_template('sport.html', sources = sources)
+    return  render_template('sports.html', sources = sources)
 
 @app.route('/category/health')
 def health():
