@@ -8,6 +8,9 @@ This python flask framework  News-App project was  created on 28/02/2022
  ## Description
 A web application built using Python framework (Flask) NEWS API and application deployed to heroku. The app shows information about news articles from popular sources, top headlines around the globe, provides news categories and the various sources available for the user.
 
+## Live Demo
+Click on the link below to view the site:https://ianonewsapp.herokuapp.com/
+
 ## Requirements
 The user can perform the following functions:
 - See various news sources on the homepage of the application
